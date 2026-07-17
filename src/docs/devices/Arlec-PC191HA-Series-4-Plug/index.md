@@ -15,7 +15,10 @@ Bunnings in Australia and New Zealand.
 These are available in White (PC191HA) or Black (PC191BKHA), and in 4-packs of White and Black - which are identical.  
 It is compact, easily fitting side-by-side in double wall sockets.
 
-The Arlec Grid Connect Smart Plug In Socket With Energy Meter uses a T1-2S module with BK7238 chip. They are not vulnerable to the cloudcutter exploit, and require soldering to remove the main PCB from the housing, and further soldering to remove the module from the PCB. Not for the faint of heart, but working with the DEV release of ESPHome 2026.08 as at July 2026. They use a BL0942 energy sensor that is connected via two UART pins only.
+The Arlec Grid Connect Smart Plug In Socket With Energy Meter uses a T1-2S module with BK7238 chip. They are not
+vulnerable to the cloudcutter exploit, and require soldering to remove the main PCB from the housing, and further
+soldering to remove the module from the PCB. Not for the faint of heart, but working with the DEV release of ESPHome
+2026.08 as at July 2026. They use a BL0942 energy sensor that is connected via two UART pins only.
 
 ## GPIO Pinout
 
@@ -29,13 +32,15 @@ The Arlec Grid Connect Smart Plug In Socket With Energy Meter uses a T1-2S modul
 
 ## Getting it up and running
 
-As with prior generations of the PC191HA, the case is ultrasonic-welded and will require a thin tool to pry it open. Some cosmetic damage is bound to occur.
-Once open, a reasonably powerful soldering it required to remove the main PCB from the power pins. Heat each side in turn and raise the PCB a little from each side.
+As with prior generations of the PC191HA, the case is ultrasonic-welded and will require a thin tool to pry it open. 
+Some cosmetic damage is bound to occur.
+Once open, a reasonably powerful soldering it required to remove the main PCB from the power pins. Heat each side in
+turn and raise the PCB a little from each side.
 Then the module can be removed from the board by way of desoldering wick.
 
 The module is labelled, connections to 3V3, GND, TX1 and RX1 are required. Crossover the UART pins to your TTL adaptor:
 
-| Pin Module | Pin TTL
+| Pin Module | Pin TTL |
 | -- | -- |
 |  TX1 | RX |
 | RX1 | TX |
